@@ -7,3 +7,5 @@ exports.clamp = (v, lo, hi) => Math.max(lo, Math.min(v, hi));
 exports.chunk = (a, n) => Array.from({ length: Math.ceil(a.length / n) }, (_, i) => a.slice(i * n, i * n + n));
 
 exports.sum = (a) => a.reduce((x, y) => x + y, 0);
+
+exports.capitalize = (s) => s ? s[0].toUpperCase() + s.slice(1) : s;
